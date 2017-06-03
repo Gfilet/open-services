@@ -1,0 +1,73 @@
+.navbar {
+  height: 60px;
+  width: 100vw;
+  .logo {
+    height: 35px;
+    margin-right: 12px;
+  }
+  .fill-white {
+    fill: $ob-white;
+  }
+  .stroke-blue {
+    stroke: $ob-black;
+    transition: stroke 0.3s ease;
+  }
+  &-brand:hover {
+    .stroke-blue {
+      stroke: $ob-blue;
+      color: $ob-blue;
+    }
+  }
+}
+
+.acme-navbar-text{
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  line-height: 1.25em;
+}
+
+a:hover, a:focus {
+  color: blue;
+}
+
+a.navbar-brand {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: absolute;
+  left: .8rem;
+  top: .8rem;
+  width: 70%;
+  &:hover {
+    color: #000;
+  }
+}
+
+
+nav.navbar .navbar-fixed-top {
+  width: 100vw;
+  background-color: rgba(0,0,0,0);
+}
+
+.icon-holder {
+  width: 2rem;
+  position: absolute;
+  right: .8rem;
+  top: .8rem;
+}
+
+.admin-link {
+  position: absolute;
+    right: 4rem;
+    top: 1.3rem;
+    font-size: .75rem;
+}

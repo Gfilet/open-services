@@ -1,0 +1,65 @@
+.ob-list {
+  margin: 0;
+  padding: 24px 0 0 0;
+  list-style-type: none;
+  a {
+    color: $ob-black;
+    text-decoration: none;
+    font-size: 1.12rem;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $ob-white;
+      outline: none;
+    }
+  }
+  &-titles {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 6px;
+    color: $ob-grey-02;
+  }
+  &-item {
+    background: $ob-white;
+    border-top: 1px solid $ob-grey-04;
+    padding: 24px 12px;
+    transition: 0.3s background ease;
+    span {
+      min-width: 60px;
+      text-align: center;
+      &:first-child {
+        width: 114px;
+        text-align: left;
+      }
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      background: $ob-blue;
+    }
+    &:last-child {
+      border-bottom: 1px solid $ob-grey-04;
+    }
+  }
+  .ob-arrow {
+    background: $ob-blue-light;
+    border-radius: 25px;
+    padding: 8px 11px;
+    margin-left: .5em;
+    svg {
+      height: 20px;
+      margin: 5px 0 0 4px;
+    }
+    polygon {
+      fill: $ob-white;
+    }
+  }
+  .spacer {
+    min-width: 50px;
+  }
+}
+
+span.label {
+  padding-right: 1em;
+}
